@@ -38,7 +38,7 @@ jobs:
         run: sudo sntp -sS time.windows.com
       
       # Create or update identifiers for app
-           - name: Refresh provisioning profiles (include App Groups)
+      - name: Refresh provisioning profiles (include App Groups)
         env:
           TEAMID: ${{ secrets.TEAMID }}
           GH_PAT: ${{ secrets.GH_PAT }}
